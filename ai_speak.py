@@ -10,7 +10,7 @@ import time
 from collections import deque
 
 # 初始化 DeepSeek API 客户端
-client = OpenAI(api_key="sk-e571ec8710634aecafe64df7613910a8", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="your APIkey", base_url="https://api.deepseek.com")
 
 # 维护群聊的对话历史（每个群聊最多保存最近的 10 条消息）
 group_conversations = {}
