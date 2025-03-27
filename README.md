@@ -1,5 +1,5 @@
 # 青少年CTF训练平台插件集合
-## CTF_info
+## 插件：CTF_info
 可以查询青少年CTF平台排行榜，以及用户个人信息，还有赛事预告。
-## AI_speak
-接入deepseek的QQ聊天机器人插件（nonebot）
+## 插件：AI_speak
+接入deepseek的QQ聊天机器人插件（nonebot）同时可以更改AI设定，包括但不限于名称，性格，说话风格。可进行上下文对话，记忆条数可更改
