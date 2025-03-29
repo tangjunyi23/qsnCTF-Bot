@@ -23,3 +23,23 @@
 1. 克隆本仓库到本地：
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+
+   
+# CTF信息查询插件
+
+一个基于 [NoneBot2](https://github.com/nonebot/nonebot2) 的插件，用于查询青少年CTF平台的赛事信息、排行榜、解题动态等内容。
+
+## 功能介绍
+
+- **赛事查询**：获取近期CTF赛事的详细信息。
+- **排行榜**：查看指定页码的排行榜信息。
+- **解题动态**：获取最新的解题动态。
+- **用户查询**：查询指定用户的详细信息。
+- **凭据更新**：自动登录并更新凭据，确保API请求正常运行。
+
+## 安装方法
+
+1. 确保已安装 [NoneBot2](https://github.com/nonebot/nonebot2) 和 `onebot-adapter-v11`。
+2. 克隆本仓库到您的 NoneBot 插件目录：
+   ```bash
+   git clone https://github.com/your-username/liyuu.git
