@@ -1,28 +1,97 @@
-# Saki酱 - 青少年平台机器人插件
+# Saki酱 - 基于Nonebot的AI聊天机器人
 
-## 简介
+Saki酱是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 开发的智能聊天机器人，集成了 DeepSeek AI 及 通义千问视觉模型，可进行智能对话、图片分析、群聊互动等。
 
-**Saki酱** 是一个基于 [NoneBot2](https://github.com/nonebot/nonebot2) 的聊天机器人插件，集成了 DeepSeek API，支持群聊对话、随机回复、上下文管理等功能。通过简单的命令，用户可以与机器人进行互动，体验智能对话的乐趣。
+## ✨ 主要功能
 
-## 功能
+- **智能对话**：基于 DeepSeek AI 提供精准、流畅的聊天体验。
+- **图片分析**：使用通义千问视觉模型解析图片内容。
+- **群聊互动**：可配置随机回复，让群聊更加活跃。
+- **自定义个性**：支持自定义机器人的性格、风格和背景。
+- **命令控制**：提供指令管理随机回复、清空对话等。
 
-1. **群聊对话**  
-   - 直接 @Saki酱 即可与其对话，支持上下文记忆功能。
+## 📦 依赖环境
 
-2. **随机回复**  
-   - 在群聊中，Saki酱有 10% 的概率随机回复消息（可通过命令开启或关闭）。
+请确保你的环境满足以下要求：
 
-3. **上下文管理**  
-   - 支持清空当前群聊的对话历史记录。
+- Python 3.8 及以上
+- Nonebot2
+- OneBot v11 适配器
+- OpenAI SDK
+- httpx
+- asyncio
 
-4. **帮助命令**  
-   - 提供详细的指令说明，方便用户快速上手。
+## 🚀 安装与运行
 
-## 安装
+### 1. 克隆项目
+```bash
+git clone https://github.com/your_username/your_repository.git
+cd your_repository
 
-1. 克隆本仓库到本地：
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+2. 安装依赖
+
+pip install -r requirements.txt
+
+3. 配置 API 密钥
+
+在 .env 或 config.py 中填入你的 API 密钥：
+
+DEEPSEEK_API_KEY=your_deepseek_api_key
+ALIYUN_VISION_API_KEY=your_aliyun_api_key
+
+4. 运行机器人
+
+nb run
+
+🎯 使用指南
+
+主要指令
+
+与Saki酱聊天：
+
+@Saki酱 + 消息 进行聊天
+
+发送图片，Saki酱会解析图片内容并回复
+
+随机回复控制：
+
+set.开启随机回复 开启群聊随机回复
+
+set.关闭随机回复 关闭群聊随机回复
+
+清空对话：
+
+#clear_context 或 #清空对话 重置对话历史
+
+帮助指令：
+
+#help 或 #指令 查看支持的命令
+
+🔧 配置说明
+
+你可以在 bot_settings 变量中修改机器人的设定，例如名称、性格、风格等。
+
+bot_settings = {
+    "name": "Saki酱",
+    "personality": "温柔，有时候大大咧咧",
+    "style": "可爱俏皮",
+    "background": "16岁女高中生，喜欢网上冲浪，懂得很多网络流行语，喜欢二次元，喜欢看动画，喜欢玩游戏，喜欢聊天。"
+}
+
+🤝 贡献指南
+
+欢迎提交 issue 和 PR，贡献你的想法和代码！
+
+Fork 代码
+
+创建新分支 (git checkout -b feature-xxx)
+
+提交代码 (git commit -m '新增xxx功能')
+
+Push 到你的分支 (git push origin feature-xxx)
+
+提交 PR
+
 
    
 # CTF信息查询插件
