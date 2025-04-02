@@ -22,24 +22,18 @@ Saki酱是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 开发的
 - asyncio
 
 ## 🚀 安装与运行
-
-### 1. 克隆项目
-```bash
-git clone https://github.com/your_username/your_repository.git
-cd your_repository
-```
-2. 安装依赖
+1. 安装依赖
 ```
 pip install -r requirements.txt
 ```
-3. 配置 API 密钥
+2. 配置 API 密钥
 
 在 .env 或 config.py 中填入你的 API 密钥：
 ```
 DEEPSEEK_API_KEY=your_deepseek_api_key
 ALIYUN_VISION_API_KEY=your_aliyun_api_key
 ```
-4. 运行机器人
+3. 运行机器人
 ```
 nb run
 ```
