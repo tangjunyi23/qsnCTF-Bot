@@ -27,57 +27,57 @@ Saki酱是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 开发的
 ```bash
 git clone https://github.com/your_username/your_repository.git
 cd your_repository
-
+```
 2. 安装依赖
-
+```
 pip install -r requirements.txt
-
+```
 3. 配置 API 密钥
 
 在 .env 或 config.py 中填入你的 API 密钥：
-
+```
 DEEPSEEK_API_KEY=your_deepseek_api_key
 ALIYUN_VISION_API_KEY=your_aliyun_api_key
-
+```
 4. 运行机器人
-
+```
 nb run
-
+```
 🎯 使用指南
 
 主要指令
 
 与Saki酱聊天：
-
+```
 @Saki酱 + 消息 进行聊天
-
+```
 发送图片，Saki酱会解析图片内容并回复
 
 随机回复控制：
-
+```
 set.开启随机回复 开启群聊随机回复
 
 set.关闭随机回复 关闭群聊随机回复
-
+```
 清空对话：
-
+```
 #clear_context 或 #清空对话 重置对话历史
-
+```
 帮助指令：
-
+```
 #help 或 #指令 查看支持的命令
-
+```
 🔧 配置说明
 
 你可以在 bot_settings 变量中修改机器人的设定，例如名称、性格、风格等。
-
+```
 bot_settings = {
     "name": "Saki酱",
     "personality": "温柔，有时候大大咧咧",
     "style": "可爱俏皮",
     "background": "16岁女高中生，喜欢网上冲浪，懂得很多网络流行语，喜欢二次元，喜欢看动画，喜欢玩游戏，喜欢聊天。"
 }
-
+```
 🤝 贡献指南
 
 欢迎提交 issue 和 PR，贡献你的想法和代码！
