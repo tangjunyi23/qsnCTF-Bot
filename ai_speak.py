@@ -19,11 +19,11 @@ from typing import Optional, Tuple
 os.makedirs("test", exist_ok=True)
 
 # 初始化 DeepSeek API 客户端
-client = OpenAI(api_key="sk-e571ec8710634aecafe64df7613910a8", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="key-----------", base_url="https://api.deepseek.com")
 
 # 初始化 通义千问视觉模型 API 客户端 - 直接在代码中设置API密钥
 vision_client = OpenAI(
-    api_key="sk-cc516e48845446f880c1cbaa66542861",  # 替换为你的实际API密钥
+    api_key="key--------------",  # 替换为你的实际API密钥
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
 )
 
